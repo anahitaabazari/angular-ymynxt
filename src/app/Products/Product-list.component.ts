@@ -16,5 +16,11 @@ import { Component } from '@angular/core';
       "Name" : "name2222"
       }
     ]
+
+    togglebtn()
+    {
+      
+
+    }
       
   }
