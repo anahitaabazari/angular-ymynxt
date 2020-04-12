@@ -9,11 +9,11 @@ import { Component } from '@angular/core';
     products :any[] =[
       {
       "Id" : 1,
-      "name" : "name1"
+      "Name" : "name1"
       },
        {
       "Id" : 2,
-      "name" : "name2222"
+      "Name" : "name2222"
       }
     ]
       
