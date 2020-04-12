@@ -6,4 +6,15 @@ import { Component } from '@angular/core';
 
   export class ProductlistComponent{
     pagetilet : string ="test Product list";
+    products :any[] =[
+      {
+      "Id" : 1,
+      "name" : "name1"
+      },
+       {
+      "Id" : 2,
+      "name" : "name2222"
+      }
+    ]
+      
   }
