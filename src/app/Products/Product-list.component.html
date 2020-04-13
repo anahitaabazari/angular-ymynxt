@@ -5,7 +5,7 @@
 
   <div class="card-body">
     <div class='row'>
-      <div col='col-md-2'>Filter by :</div>
+      <div col='col-md-2'>Filter by : {{listfilter}}  </div>
       <div col='col-md-4'><input type="text"></div>
     </div>
     <div class='row'>
@@ -32,7 +32,7 @@
         <tr *ngFor='let product of products'>
             <td></td>
             <td>{{product.Id}}</td>
-            <td>{{product.Name}}</td>
+            <td>{{product.Name | lowercase }}</td>
         </tr>
       </tbody>
      

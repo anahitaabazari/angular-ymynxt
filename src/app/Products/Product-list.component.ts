@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IProduct } from './Product'
 
 @Component({
   selector: 'pm-products',
@@ -6,14 +7,15 @@ import { Component } from '@angular/core';
 
   export class ProductlistComponent{
     pagetilet : string ="test Product list";
-    products :any[] =[
+    listfilter : string ="card";
+    products : IProduct[] =[
       {
-      "Id" : 1,
-      "Name" : "name1"
+      "productId" : 1,
+      "productName" : "name1"
       },
        {
-      "Id" : 2,
-      "Name" : "name2222"
+      "productId" : 2,
+      "productName" : "NNName2222"
       }
     ]
 
