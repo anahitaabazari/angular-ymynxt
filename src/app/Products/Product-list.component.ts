@@ -15,7 +15,7 @@ import { IProduct } from './Product'
       },
        {
       "productId" : 2,
-      "productName" : "NNName2222"
+      "productName" : "NNN-ame2222"
       }
     ]
 

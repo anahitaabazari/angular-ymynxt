@@ -8,7 +8,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class ConvertToSpacesPipe implements PipeTransform 
 {
  transfrom(value: string, character:string) : string {
-
+      return value.replace(character," ");
  }
 
  
