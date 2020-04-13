@@ -7,11 +7,22 @@ import { IProduct } from './pp';
 
   export class ProductlistComponent{
     pagetilet : string ="test Product list";
-    listfilter : string ="card";
+    _listfilter : string;
+
+    get listfilter() : string{
+      return this._listfilter;
+    }
+
+     set listfilter(value:string) 
+     {
+       this._listfilter = value;
+    }
+
+    filterproduc : IProduct[];
     products : IProduct[] =[
       {
       "productId" : 1,
-      "productName" : "name1"
+      "productName" : "name-1"
       },
        {
       "productId" : 2,
@@ -21,8 +32,6 @@ import { IProduct } from './pp';
 
     togglebtn()
     {
-      
-
     }
       
   }
