@@ -25,9 +25,14 @@ import { IProduct } from './pp';
       filterby= filterby.toLocaleLowerCase();
       return this.products.filter((product: IProduct) =>
         product.productName.toLocaleLowerCase().indexOf(filterby) !=-1);
-      )
+      
     }
-   
+   constructor()
+   {
+     this.filterproduc=this.products;
+     this.listfilter="cart";
+   }
+
     filterproduc : IProduct[];
     products : IProduct[] =[
       {
