@@ -16,8 +16,18 @@ import { IProduct } from './pp';
      set listfilter(value:string) 
      {
        this._listfilter = value;
+   
+       this.filterproduc =this._listfilter? this.PerformFilter(this._listfilter) : this.products;
     }
 
+    PerformFilter(filterby:string) : IProduct[]
+    {
+      filterby= filterby.toLocaleLowerCase();
+      return this.products.filter((product: IProduct) =>
+        product.productName.toLocaleLowerCase().indexOf(filterby) !=-1);
+      )
+    }
+   
     filterproduc : IProduct[];
     products : IProduct[] =[
       {
