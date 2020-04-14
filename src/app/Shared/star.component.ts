@@ -12,6 +12,6 @@ export class StartComponent implements OnChanges
    starWidth:  number;
 
    ngOnChanges() : void{
-         
+         this.starWidth = this.rating * 75/5;
    }
 }
