@@ -10,7 +10,7 @@ import { IProduct } from './pp';
     constructor()
    {
      this.filterproduc=this.products;
-     this.listfilter="cart11";
+     this.listfilter="";
    }
     ngOnInit() : void
     {
@@ -42,19 +42,23 @@ import { IProduct } from './pp';
     products : IProduct[] =[
       {
       "productId" : 1,
-      "productName" : "name-1"
+      "productName" : "name-1",
+      "productRate":1,
       },
        {
       "productId" : 2,
-      "productName" : "NNN-ame2222"
+      "productName" : "NNN-ame2222",
+      "productRate":2,
       },
        {
       "productId" : 3,
-      "productName" : "NNN-333333"
+      "productName" : "NNN-333333",
+      "productRate":1,
       },
        {
       "productId" : 4,
-      "productName" : "NNN-444444"
+      "productName" : "NNN-444444",
+      "productRate":1
       }
     ]
    
