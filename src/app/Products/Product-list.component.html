@@ -36,6 +36,7 @@
             <td>{{product.productId}}</td>
             <td>{{product.productName | lowercase  | ConvertToSpacesPipe: '-' }}</td>
             <td><pm-star [rating]='product.productRate'></pm-star></td>
+            <td>{{product.productRate}}</td>
         </tr>
       </tbody>
      
