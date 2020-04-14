@@ -1,0 +1,6 @@
+@Componet()
+
+export class StartComponent
+{
+
+}
