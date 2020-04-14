@@ -43,12 +43,12 @@ import { IProduct } from './pp';
       {
       "productId" : 1,
       "productName" : "name-1",
-      "productRate":1,
+      "productRate" : 1,
       },
        {
       "productId" : 2,
       "productName" : "NNN-ame2222",
-      "productRate":2,
+      "productRate" : 2,
       },
        {
       "productId" : 3,
@@ -58,7 +58,7 @@ import { IProduct } from './pp';
        {
       "productId" : 4,
       "productName" : "NNN-444444",
-      "productRate":1
+      "productRate":3,
       }
     ]
    
