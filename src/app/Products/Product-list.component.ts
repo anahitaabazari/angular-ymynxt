@@ -1,11 +1,21 @@
-import { Component } from '@angular/core';
+import { Component ,OnInit } from '@angular/core';
 import { IProduct } from './pp';
 
 @Component({
   selector: 'pm-products',
   templateUrl: './Product-list.component.html'})
 
-  export class ProductlistComponent{
+  export class ProductlistComponent implements OnInit {
+
+    constructor()
+   {
+     this.filterproduc=this.products;
+     this.listfilter="cart";
+   }
+    ngOnInit() : void
+    {
+      
+    }
     pagetilet : string ="test Product list";
     _listfilter : string;
 
@@ -27,13 +37,8 @@ import { IProduct } from './pp';
         product.productName.toLocaleLowerCase().indexOf(filterby) !=-1);
       
     }
-   constructor()
-   {
-     this.filterproduc=this.products;
-     this.listfilter="cart";
-   }
 
-    filterproduc : IProduct[];
+      filterproduc : IProduct[];
     products : IProduct[] =[
       {
       "productId" : 1,
@@ -52,6 +57,9 @@ import { IProduct } from './pp';
       "productName" : "NNN-444444"
       }
     ]
+   
+
+  
 
     togglebtn()
     {
