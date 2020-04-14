@@ -14,7 +14,7 @@ import { IProduct } from './pp';
    }
     ngOnInit() : void
     {
-      
+
     }
     pagetilet : string ="test Product list";
     _listfilter : string;
