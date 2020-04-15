@@ -13,13 +13,14 @@ import { ProductService } from './product.service';
     private _ProductService;
     constructor(ProductService : Ps)
    {
-     this.filterproduc=this.products;
-     this.listfilter="";
+     
      this._ProductService=ps;
    }
     ngOnInit() : void
     {
-
+       products=this._ProductService.GetProducts();
+       this.filterproduc=this.products;
+        this.listfilter="";
     }
     pagetilet : string ="test Product list";
     _listfilter : string;
@@ -44,29 +45,7 @@ import { ProductService } from './product.service';
     }
 
       filterproduc : IProduct[];
-    products : IProduct[] =[
-      {
-      "productId" : 1,
-      "productName" : "name-1",
-      "productRate" : 1,
-      },
-       {
-      "productId" : 2,
-      "productName" : "NNN-ame2222",
-      "productRate" : 2,
-      },
-       {
-      "productId" : 3,
-      "productName" : "NNN-333333",
-      "productRate":1,
-      },
-       {
-      "productId" : 4,
-      "productName" : "NNN-444444",
-      "productRate":3,
-      }
-    ]
-   
+    products : IProduct[] ;
 
   
 
