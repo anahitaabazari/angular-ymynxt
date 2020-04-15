@@ -1,11 +1,10 @@
-import Injectable from '@angular/core'
-import { IProduct } from './pp';
+import { Injectable } from '@angular/core'
+import { IProduct } from './pp'
 
-@Injectable(
-  {
-    providedIn='root'
-  }
-)
+@Injectable({
+    providedIn: 'root'
+  })
+
 
 export class ProductService{
 
