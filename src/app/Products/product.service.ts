@@ -1,7 +1,11 @@
 import Injectable from '@angular/core'
 import { IProduct } from './pp';
 
-@Injectable()
+@Injectable(
+  {
+    providedIn='root'
+  }
+)
 
 export class ProductService{
 
