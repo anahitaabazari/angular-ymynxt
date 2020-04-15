@@ -3,7 +3,9 @@ import { IProduct } from './pp';
 
 @Component({
   selector: 'pm-products',
-  templateUrl: './Product-list.component.html'})
+  templateUrl: './Product-list.component.html'},
+  providers = [ProductService]
+  })
 
   export class ProductlistComponent implements OnInit {
 
