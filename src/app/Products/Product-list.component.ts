@@ -22,7 +22,7 @@ import { ProductService } from './product.service'
    
     ngOnInit() : void
     {
-        this.products =this._ProductService.GetProducts();
+        this.products =this._ProductService.getProducts();
         this.filterproduc=this.products;
         this.listfilter="";
     }
@@ -37,7 +37,7 @@ import { ProductService } from './product.service'
      {
        this._listfilter = value;
    
-       this.filterproduc =this._listfilter? this.PerformFilter(this._listfilter) : this.products;
+      this.filterproduc =this._listfilter? this.PerformFilter(this._listfilter) : this.products;
     }
 
     PerformFilter(filterby:string) : IProduct[]
