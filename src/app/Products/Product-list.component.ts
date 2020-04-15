@@ -1,25 +1,28 @@
 import { Component ,OnInit } from '@angular/core';
 import { IProduct } from './pp';
-import { ProductService } from './product.service';
+
 
 @Component({
   selector: 'pm-products',
-  templateUrl: './Product-list.component.html'},
-  providers = [ProductService]
+  templateUrl: './Product-list.component.html',
+   
   })
 
   export class ProductlistComponent implements OnInit {
 
-    private _ProductService;
-    constructor(ProductService : Ps)
+    ProductService : _ProductService;
+    filterproduc : IProduct[];
+    products : IProduct[] ;
+
+    constructor(private ProductService : Ps)
    {
-     
-     this._ProductService=ps;
+          this._ProductService=ps;
    }
+   
     ngOnInit() : void
     {
-       products=this._ProductService.GetProducts();
-       this.filterproduc=this.products;
+        products=this._ProductService.GetProducts();
+        this.filterproduc=this.products;
         this.listfilter="";
     }
     pagetilet : string ="test Product list";
@@ -44,9 +47,7 @@ import { ProductService } from './product.service';
       
     }
 
-      filterproduc : IProduct[];
-    products : IProduct[] ;
-
+     
   
 
     togglebtn()
