@@ -10,10 +10,12 @@ import { ProductService } from './product.service';
 
   export class ProductlistComponent implements OnInit {
 
-    constructor()
+    private _ProductService;
+    constructor(ProductService : Ps)
    {
      this.filterproduc=this.products;
      this.listfilter="";
+     this._ProductService=ps;
    }
     ngOnInit() : void
     {
