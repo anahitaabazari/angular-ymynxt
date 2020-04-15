@@ -1,27 +1,28 @@
-import { Component ,OnInit } from '@angular/core';
-import { IProduct } from './pp';
+import { Component ,OnInit } from '@angular/core'
+import { IProduct } from './pp'
+import { ProductService } from './product.service'
 
 
 @Component({
-  selector: 'pm-products',
-  templateUrl: './Product-list.component.html',
-   
+      selector: 'pm-products',
+      templateUrl: './Product-list.component.html',
+      providers: [ProductService]
   })
 
   export class ProductlistComponent implements OnInit {
 
-    ProductService : _ProductService;
+     private _ProductService;
     filterproduc : IProduct[];
     products : IProduct[] ;
 
-    constructor(private ProductService : Ps)
+    constructor(Pss : ProductService)
    {
-          this._ProductService=ps;
+          this._ProductService = Pss;
    }
    
     ngOnInit() : void
     {
-        products=this._ProductService.GetProducts();
+        this.products =this._ProductService.GetProducts();
         this.filterproduc=this.products;
         this.listfilter="";
     }
