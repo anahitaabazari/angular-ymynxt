@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core'
-import { IProduct } from './pp'
+import { IProduct } from './pp';
+import { HttpClient } from '@angular/common/http';
 
 
 @Injectable({
@@ -31,7 +32,7 @@ const productlis : IProduct[] =
           ]
 export class ProductService{
 
- constructor() { }
+ constructor(private http: HttpClient) { }
 
   
         getProducts()  {
