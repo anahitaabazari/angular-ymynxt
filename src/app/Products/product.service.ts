@@ -6,16 +6,8 @@ import { IProduct } from './pp'
     providedIn: 'root'
   })
 
-
-export class ProductService{
-
- constructor() { }
-
-   //getProducts() { return HEROES; }
-
-        getProducts() : IProduct[]  {
-          return
-          [
+const productlis : IProduct[] =
+[
               {
               "productId" : 1,
               "productName" : "name-1",
@@ -37,5 +29,13 @@ export class ProductService{
               "productRate":3,
               }
           ]
+export class ProductService{
+
+ constructor() { }
+
+  
+        getProducts()  {
+          return productlis;
+          
         }
 }
