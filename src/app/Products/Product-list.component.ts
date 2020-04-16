@@ -6,28 +6,28 @@ import { ProductService } from   './product.service';
 @Component({
       selector: 'pm-products',
       templateUrl: './Product-list.component.html',
-         providers: [ProductService],
+      
   })
 
   export class ProductlistComponent implements OnInit {
 
-     public _ProductService : ProductService;
+   //  public _ProductService : ProductService;
     filterproduc : IProduct[];
     products : IProduct[] ;
     cc: number;
 
     constructor(private Pss : ProductService)
    {
-          this._ProductService = Pss;
+         // this._ProductService = Pss;
    }
    
     ngOnInit() : void
     {
-        this.products =this._ProductService.getProducts();
+        this.products =this.Pss.getProducts();
         this.filterproduc=this.products;
         this.listfilter="";
         //this.cc =this.filterproduc.length;
-        this.cc =;
+        this.cc =1;
     }
     pagetilet : string ="test Product list";
     _listfilter : string;
