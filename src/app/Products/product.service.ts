@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { IProduct } from './pp';
-//import { HttpClient } from '@angular/common/http';
+
 
 
 @Injectable({
