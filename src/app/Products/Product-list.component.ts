@@ -1,17 +1,17 @@
 import { Component ,OnInit } from '@angular/core'
 import { IProduct } from './pp'
-/import { ProductService } from   './product.service';
+import { ProductService } from   './product.service';
 
 
 @Component({
       selector: 'pm-products',
-      templateUrl: './Product-list.component.html'
-      
+      templateUrl: './Product-list.component.html',
+         providers: [ProductService],
   })
 
   export class ProductlistComponent implements OnInit {
 
-     private _ProductService;
+     public _ProductService : ProductService;
     filterproduc : IProduct[];
     products : IProduct[] ;
     cc: number;
@@ -26,7 +26,8 @@ import { IProduct } from './pp'
         this.products =this._ProductService.getProducts();
         this.filterproduc=this.products;
         this.listfilter="";
-        this.cc =this.filterproduc.length;
+        //this.cc =this.filterproduc.length;
+        this.cc =;
     }
     pagetilet : string ="test Product list";
     _listfilter : string;
