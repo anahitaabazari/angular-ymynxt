@@ -1,6 +1,6 @@
 import { Component ,OnInit } from '@angular/core'
 import { IProduct } from './pp'
-import { ProductService } from   './product.service';
+/import { ProductService } from   './product.service';
 
 
 @Component({
@@ -14,6 +14,7 @@ import { ProductService } from   './product.service';
      private _ProductService;
     filterproduc : IProduct[];
     products : IProduct[] ;
+    cc: number;
 
     constructor(private Pss : ProductService)
    {
@@ -25,6 +26,7 @@ import { ProductService } from   './product.service';
         this.products =this._ProductService.getProducts();
         this.filterproduc=this.products;
         this.listfilter="";
+        this.cc =this.filterproduc.length;
     }
     pagetilet : string ="test Product list";
     _listfilter : string;
