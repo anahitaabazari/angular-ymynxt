@@ -3,9 +3,7 @@ import { IProduct } from './pp';
 import { HttpClient } from '@angular/common/http';
 
 
-@Injectable({
-    providedIn: 'root'
-  })
+
 
 const productlis : IProduct[] =
 [
