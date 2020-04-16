@@ -9,10 +9,11 @@ import { ConvertToSpacesPipe } from './Products/convert-to-spaces.pipe';
 import { StartComponent } from './Shared/star.component';
 
 import { ProductService } from   './Products/product.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
+  imports:      [ BrowserModule, FormsModule , HttpClientModule],
   declarations: [ AppComponent, HelloComponent, ProductlistComponent , ConvertToSpacesPipe, StartComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService],
