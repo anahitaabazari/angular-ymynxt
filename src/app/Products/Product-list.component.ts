@@ -1,6 +1,6 @@
 import { Component ,OnInit } from '@angular/core'
 import { IProduct } from './pp'
-import { ProductService } from './product.service'
+//import { ProductService } from './product.service'
 
 
 @Component({
@@ -15,7 +15,7 @@ import { ProductService } from './product.service'
     filterproduc : IProduct[];
     products : IProduct[] ;
 
-    constructor(Pss : ProductService)
+    constructor(private Pss : ProductService)
    {
           this._ProductService = Pss;
    }
