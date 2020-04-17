@@ -8,5 +8,12 @@ import {Component ,OnInit } from '@angular/core'
 
   export class productdtl implements OnInit {
 
-    
+    constructor(){
+
+    }
+
+    ngOnInit()
+    {
+      
+    }
   }
