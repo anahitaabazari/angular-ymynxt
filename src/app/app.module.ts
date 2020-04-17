@@ -11,6 +11,7 @@ import { StartComponent } from './Shared/star.component';
 
 import { ProductService } from   './Products/product.service';
 import { HttpClientModule } from '@angular/common/http';
+import {RouterModule }  from '@angular/router';
 
 
 @NgModule({
