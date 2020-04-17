@@ -15,7 +15,7 @@ import {RouterModule }  from '@angular/router';
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule , HttpClientModule],
+  imports:      [ BrowserModule, FormsModule , HttpClientModule , RouterModule],
   declarations: [ AppComponent, HelloComponent, ProductlistComponent , ConvertToSpacesPipe, StartComponent , productdtl  ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService],
