@@ -1,5 +1,5 @@
 import {Component ,OnInit } from '@angular/core'
-
+import {IProduct } from './pp'
 
 @Component({
       selector: 'pm-products-detail',
@@ -14,6 +14,6 @@ import {Component ,OnInit } from '@angular/core'
 
     ngOnInit()
     {
-      
+
     }
   }
