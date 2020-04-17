@@ -5,3 +5,8 @@ import {Component ,OnInit } from '@angular/core'
       selector: 'pm-products-detail',
       templateUrl: './Product-list.component.html',
   })
+
+  export class productdtl implements OnInit {
+
+    
+  }
