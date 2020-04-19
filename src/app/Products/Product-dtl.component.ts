@@ -4,7 +4,7 @@ import { ActivatedRoute } from '@angular/router'
 
 @Component({
       selector: 'pm-products-detail',
-      templateUrl: './Product-list.component.html',
+      templateUrl: './Product-dtl.component.html',
   })
 
   export class productdtl implements OnInit {
