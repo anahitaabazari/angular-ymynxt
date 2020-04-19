@@ -34,7 +34,7 @@
        <tbody>
         <tr *ngFor='let product of filterproduc'>
             <td></td>
-            <td><a [routerLink]="['/product',product.productId]">{{product.productId}}</a></td>
+            <td><a [routerLink]="['/productdtl',product.productId]">{{product.productId}}</a></td>
             <td>{{product.productName | lowercase  | ConvertToSpacesPipe: '-' }}</td>
             <td><pm-star [rating]='product.productRate'></pm-star></td>
             <td>{{product.productRate}}</td>
