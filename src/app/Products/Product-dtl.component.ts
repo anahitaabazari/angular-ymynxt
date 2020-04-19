@@ -19,4 +19,9 @@ import { ActivatedRoute } from '@angular/router'
     let id =+this.route.snapshot.paramMap.get("productId");
     this.pageTitle += `: ${id}`
     }
+
+     onBack() :void {
+      this.route.navigate(['/products']);
+    }
+      
   }
