@@ -1,6 +1,7 @@
 import {Component ,OnInit } from '@angular/core'
 import {IProduct } from './pp'
 import { ActivatedRoute } from '@angular/router'
+import { Router } from '@angular/router'
 
 @Component({
       selector: 'pm-products-detail',
