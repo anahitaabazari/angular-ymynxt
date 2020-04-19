@@ -11,16 +11,15 @@ import { StartComponent } from './Shared/star.component';
 
 import { ProductService } from   './Products/product.service';
 import { HttpClientModule } from '@angular/common/http';
-import {RouterModule }  from '@angular/router';
-import { ActivatedRoute } from '@angular/router'
+import { RouterModule }  from '@angular/router';
+
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule , HttpClientModule , 
-  
   RouterModule.forRoot([
     { path: 'product' , component: ProductlistComponent },
-    { path: 'product/:id' , component: productdtl },
+    { path: 'productdtl/:id' , component: productdtl },
   ])
   ],
   declarations: [ AppComponent, HelloComponent, ProductlistComponent , ConvertToSpacesPipe, StartComponent , productdtl  ],
