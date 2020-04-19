@@ -19,7 +19,7 @@ import { RouterModule }  from '@angular/router';
   imports:      [ BrowserModule, FormsModule , HttpClientModule , 
   RouterModule.forRoot([
     { path: 'product' , component: ProductlistComponent },
-    { path: 'productdtl/:id' , component: productdtl },
+    { path: 'product/:id' , component: productdtl },
   ])
   ],
   declarations: [ AppComponent, HelloComponent, ProductlistComponent , ConvertToSpacesPipe, StartComponent , productdtl  ],
