@@ -16,7 +16,8 @@ import { ActivatedRoute } from '@angular/router'
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule , HttpClientModule , ActivatedRoute,
+  imports:      [ BrowserModule, FormsModule , HttpClientModule , 
+  
   RouterModule.forRoot([
     { path: 'product' , component: ProductlistComponent },
     { path: 'product/:id' , component: productdtl },
