@@ -16,7 +16,7 @@ import { ActivatedRoute } from '@angular/router'
 
     ngOnInit()
     {
-    let id =+this.route.snapshot.paramMap.get("");
+    let id =+this.route.snapshot.paramMap.get("productId");
     this.pageTitle += `: ${id}`
     }
   }
