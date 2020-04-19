@@ -1,5 +1,6 @@
 import {Component ,OnInit } from '@angular/core'
 import {IProduct } from './pp'
+import { ActivatedRoute } from '@angular/router'
 
 @Component({
       selector: 'pm-products-detail',
@@ -8,7 +9,7 @@ import {IProduct } from './pp'
 
   export class productdtl implements OnInit {
 
-    constructor(){
+    constructor(private route: ActivatedRoute){
 
     }
 
