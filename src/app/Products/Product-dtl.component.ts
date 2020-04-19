@@ -10,7 +10,9 @@ import { ActivatedRoute } from '@angular/router'
   export class productdtl implements OnInit {
     pageTitle :string="test";
 
-    constructor(private route: ActivatedRoute){
+    constructor(private route: ActivatedRoute,
+    private router: Router,
+    ){
 
     }
 
@@ -21,7 +23,7 @@ import { ActivatedRoute } from '@angular/router'
     }
 
      onBack() :void {
-      this.route.navigate(['/products']);
+      this.router.navigate(['/products']);
     }
       
   }
