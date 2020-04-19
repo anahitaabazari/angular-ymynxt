@@ -8,6 +8,7 @@ import { ActivatedRoute } from '@angular/router'
   })
 
   export class productdtl implements OnInit {
+    pageTitle :string="test";
 
     constructor(private route: ActivatedRoute){
 
@@ -15,6 +16,7 @@ import { ActivatedRoute } from '@angular/router'
 
     ngOnInit()
     {
-
+    let id =+this.route.snapshot.paramMap.get("");
+    this.pageTitle += `: ${id}`
     }
   }
