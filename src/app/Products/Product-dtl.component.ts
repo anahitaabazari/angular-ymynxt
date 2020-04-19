@@ -24,7 +24,7 @@ import { Router } from '@angular/router'
     }
 
      onBack() :void {
-      this.router.navigate(['/products']);
+      this.router.navigate(['/product']);
     }
       
   }
